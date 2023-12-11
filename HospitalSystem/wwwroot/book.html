@@ -1,0 +1,160 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BOOK APPOINTMENT</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+            .form-group label {
+                display: block;
+                font-weight: bold;
+                margin-bottom: 5px;
+            }
+
+            .form-group input[type="text"],
+            .form-group input[type="password"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+            }
+
+            .form-group button {
+                display: block;
+                width: 100%;
+                padding: 10px;
+                border: none;
+                background-color: #4caf50;
+                color: #fff;
+                font-size: 16px;
+                font-weight: bold;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+
+                .form-group button:hover {
+                    background-color: #45a049;
+                }
+
+            .form-group .form-check {
+                margin-top: 10px;
+            }
+
+                .form-group .form-check label {
+                    font-weight: normal;
+                }
+
+        .error-message {
+            color: #ff0000;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <section class="book_section layout_padding">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <form>
+                        <h4>
+                            BOOK <span>APPOINTMENT</span>
+                        </h4>
+                        <div class="form-row ">
+                            <div class="form-group col-lg-4">
+                                <label for="inputPatientName">Patient Name </label>
+                                <input type="text" class="form-control" id="inputPatientName" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="inputDoctorName">Doctor's Name</label>
+                                <select name="" class="form-control wide" id="inputDoctorName">
+                                    <option value="">Select Doctor</option>
+                                    <option value="Normal distribution ">Mohamed Mostafa </option>
+                                    <option value="Normal distribution ">Ahmed Ali</option>
+                                    <option value="Normal distribution ">Eman Ismail </option>
+                                    <option value="Normal distribution ">Salma Mohamed</option>
+                                    <option value="Normal distribution ">Fares Osama</option>
+
+                                </select>
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="inputDepartmentName">Department's Name</label>
+                                <select name="" class="form-control wide" id="inputDepartmentName">
+                                    <option value="">Select Department</option>
+                                    <option value="Normal distribution ">Cardiology </option>
+                                    <option value="Normal distribution ">Neurology </option>
+                                    <option value="Normal distribution ">Hematology </option>
+                                    <option value="Normal distribution ">Ear, Nose and Throat(ENT) </option>
+                                    <option value="Normal distribution ">Surgical </option>
+                                    <option value="Normal distribution ">Internal Medicine </option>
+                                    <option value="Normal distribution ">Pediatric </option>
+                                    <option value="Normal distribution ">Dental </option>
+                                    <option value="Normal distribution ">Psychiatry </option>
+                                    <option value="Normal distribution ">Neurology </option>
+                                    <option value="Normal distribution ">Ophthalmology </option>
+                                    <option value="Normal distribution ">Dermatology </option>
+                                    <option value="Normal distribution ">Gastroenterology </option>
+                                    <option value="Normal distribution ">Cardiology  </option>
+                                    <option value="Normal distribution ">Plastic Surgery </option>
+                                    <option value="Normal distribution ">Pulmonology </option>
+                                    <option value="Normal distribution ">x-ray wourd </option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-row ">
+                            <div class="form-group col-lg-4">
+                                <label for="inputPhone">Phone Number</label>
+                                <input type="number" class="" id="inputPhone" placeholder="XXXXXXXXXX">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="inputSymptoms">Symptoms</label>
+                                <input type="text" class="form-control" id="inputSymptoms" placeholder="">
+                            </div>
+                            <div class="form-group col-lg-4">
+                                <label for="inputDate">Choose Date </label>
+                                <div class="input-group date" id="inputDate" data-date-format="mm-dd-yyyy">
+                                    <input type="text" class="form-control" readonly>
+                                    
+                                        <label for="calendarInput">Select Date:</label>
+                                        <input type="date" id="calendarInput" name="date">
+                                        <br>
+                                    
+                                    <br>
+                                    <button type="submit">Submit</button>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

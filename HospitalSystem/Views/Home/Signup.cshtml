@@ -1,0 +1,60 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Sign Up Page";
+
+}
+
+    <div class="signup-area">
+        <section class="signup-section layout-padding-bottom">
+            <div class="container">
+                <div class="heading-container">
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="form-container">
+                        <form action="~/index.html" method="get">
+                            <div>
+                                    <input type="text" placeholder="Full Name" />
+                                </div>
+                                <div>
+                                    <input type="email" placeholder="Email" />
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Phone Number" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Password" />
+                                </div>
+                                <div>
+                                    <input type="password" placeholder="Confirm Password" />
+                                </div>
+                                <div>
+                                    <input type="text" placeholder="Gender" />
+                                    <select name="gender" id="gender">
+                                        <option disabled selected>Select your gender</option>
+                                        <option value="female">Female</option>
+                                        <option value="male">Male</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <input type="text" class="message-box" placeholder="Any Comment" />
+                                </div>
+                                <div class="btn-box">
+                                    <button type="submit">SEND</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                     <div class="col-md-5">
+                        <div class="img-box">
+                            <img src="~/images/signup.jpg" alt="">
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+    </div>
+
