@@ -1,6 +1,5 @@
 document.getElementById("SignUp").onsubmit = function signUp() {
-    let user = document.getElementById("user").value;
-
+    alert("1");
     let email = document.getElementById("Email").value;
     let emailRe = /\w+@gmail\.com$/i;
     let validateEmail = emailRe.test(email);
@@ -8,6 +7,7 @@ document.getElementById("SignUp").onsubmit = function signUp() {
         alert("your email must have @gmail.com");
         return;
     }
+    alert("2");
 
     let phoneNum = document.getElementById("PhoneNumber").value;
     let phoneReg = /^0(10|11|12|15)\d{8}$/;

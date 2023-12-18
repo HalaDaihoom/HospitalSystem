@@ -56,6 +56,21 @@ namespace HospitalSystem.Controllers
         {
             return View();
         }
+
+
+        // test new interface
+
+        public IActionResult ContinueAsDoc()
+        {
+            return View();
+        }
+
+        public IActionResult ContinueAsPatient()
+        {
+            return View();
+        }
+
+        //end test
         public IActionResult Privacy()
         {
             return View();

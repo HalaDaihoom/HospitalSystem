@@ -8,27 +8,35 @@
 
 
 <div class="login-area">
-    <section class="login_section layout-padding-bottom">
+    <section class="signup_section layout-padding-bottom">
         <div class="container">
-            <div class="heading-container">
-                <h2>Login</h2>
-            </div>
+
             <div class="row">
                 <div class="col-md-7">
                     <div class="form-container">
-                        <form method="post">
-                            <input type="text" name="email" class="form-control" id="name" placeholder="email" required>
-                            <input type="password" name="password" class="form-control" id="name" placeholder="password" required>
-                            <input type="submit" />
+                        <form id="login" action="PatientIndex.html" method="get">
+
+
+                            <div>
+                                <label for="user">Username:</label>
+                                <input type="text" id="username" placeholder="your username" />
+                            </div>
+                            <div>
+                                <label for="user">Password:</label>
+                                <input type="password" id="password" placeholder="your password" />
+                            </div>
+                            <div>
+                                <input type="submit" value="login">
+                            </div>
+
                         </form>
                     </div>
-
                 </div>
-                <div class="col-md-5">
+                <!--<div class="col-md-5">
                     <div class="img-box">
-                        <img src="~/images/login.jpg" alt="">
+                        <img src="images/signup.jpg" alt="">
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </section>
