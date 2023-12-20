@@ -1,3 +1,4 @@
+﻿
 <!DOCTYPE html>
 <html>
 <head>
@@ -13,7 +14,6 @@
 
     <title>Mico</title>
 
-    
     <!-- bootstrap core css -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
@@ -81,40 +81,11 @@
                                 <li class="nav-item active">
                                     <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                                 </li>
-                                <!--<li class="nav-item">
-                                <a class="nav-link" href="about.html"> About</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="treatment.html">Treatment</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="doctor.html">Doctors</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="book.html">Appoitment</a>
-                            </li>-->
+                               
 
                             </ul>
                         </div>
-                        <div class="quote_btn-container">
-                            <a href="login.html">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span>
-                                    Login
-                                </span>
-                            </a>
-                            <a href="signup.html">
-                                <i class="fa fa-user" aria-hidden="true"></i>
-                                <span>
-                                    Sign Up
-                                </span>
-                            </a>
-                            <form class="form-inline">
-                                <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit">
-                                    <i class="fa fa-search" aria-hidden="true"></i>
-                                </button>
-                            </form>
-                        </div>
+                       
                     </div>
                 </nav>
             </div>
@@ -122,45 +93,25 @@
     </header>
     <section class="signup_section layout-padding-bottom">
         <div class="container">
-           
+
             <div class="row">
                 <div class="col-md-7">
                     <div class="form-container">
-                        <form id="SignUp" action="PatientIndex.html" onsubmit="signup()">
+                        <form id="login" action="DrIndex.html" method="get">
+
 
                             <div>
-                                <label for="user">Username:</label>
-                                <input type="text" id="name" placeholder="Full Name" />
-                            </div>
-                            <div>
                                 <label for="user">Email:</label>
-                                <input type="email" id="email" placeholder="Email" />
-                            </div>
-                            <div>
-                                <label for="user">Phone Number:</label>
-                                <input type="text" id="phoneNum" placeholder="Phone Number" />
+                                <input type="text" id="email" placeholder="your email" />
                             </div>
                             <div>
                                 <label for="user">Password:</label>
-                                <input type="password" id="password" placeholder="Password" />
+                                <input type="password" id="password" placeholder="your password" />
                             </div>
                             <div>
-                                <label for="user">Confirm Password:</label>
-                                <input type="password" id="comfirmPass" placeholder="Confirm Password" />
-                            </div>
-                            <div>
-
-                                <label for="user">Genger:</label>
-                                <select name="gender" id="gender">
-                                    <option disabled selected>Select your gender</option>
-                                    <option value="female">Female</option>
-                                    <option value="male">Male</option>
-                                </select>
+                                <input type="submit" value="login">
                             </div>
 
-                            <div class="btn-box">
-                                <button type="submit">Submit</button>
-                            </div>
                         </form>
                     </div>
                 </div>
@@ -172,6 +123,5 @@
             </div>
         </div>
     </section>
-    <script src="js/signup.js"></script>
 </body>
 </html>

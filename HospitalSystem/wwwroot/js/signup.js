@@ -1,17 +1,19 @@
-document.getElementById("SignUp").onsubmit = function signUp() {
-    alert("1");
-    let email = document.getElementById("Email").value;
+function signup() {
+ 
+    let email = document.getElementById("email").value;
     let emailRe = /\w+@gmail\.com$/i;
     let validateEmail = emailRe.test(email);
     if (validateEmail === false) {
         alert("your email must have @gmail.com");
         return;
     }
-    alert("2");
+ 
 
-    let phoneNum = document.getElementById("PhoneNumber").value;
+    let phoneNum = document.getElementById("phoneNum").value;
+ 
     let phoneReg = /^0(10|11|12|15)\d{8}$/;
     let validateNumber = phoneReg.test(phoneNum);
+    
     if (validateNumber === false) {
         alert("start with 010, 011, 012, or 015");
         return;
@@ -25,7 +27,7 @@ document.getElementById("SignUp").onsubmit = function signUp() {
         alert("Weak password the minimum length is 8 chars");
         return;
     }
-
+ 
     let gender = document.getElementById("gender").value;
     if (!(gender === "female" || gender === "male")) {
         alert("your gender is male or female");

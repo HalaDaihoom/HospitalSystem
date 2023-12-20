@@ -40,7 +40,11 @@ namespace HospitalSystem.Controllers
             return View();
         }
 
-        public IActionResult login()
+        public IActionResult DrLogin()
+        {
+            return View();
+        }
+        public IActionResult Login()
         {
             return View();
         }
@@ -69,6 +73,7 @@ namespace HospitalSystem.Controllers
         {
             return View();
         }
+       
 
         //end test
         public IActionResult Privacy()
