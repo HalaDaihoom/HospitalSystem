@@ -17,6 +17,18 @@ namespace HospitalSystem.Controllers
         {
             return View();
         }
+        public IActionResult PrePatientIndex()
+        {
+            return View();
+        }
+        public IActionResult Signup()
+        {
+            return View();
+        }
+        public IActionResult Login()
+        {
+            return View();
+        }
         public IActionResult Index()
         {
             return View();
@@ -35,16 +47,21 @@ namespace HospitalSystem.Controllers
         {
             return View();
         }
-        public IActionResult Signup()
+
+        public IActionResult PreDrIndex()
         {
             return View();
         }
-
         public IActionResult DrLogin()
         {
             return View();
         }
-        public IActionResult Login()
+        public IActionResult MangerLogin()
+        {
+            return View();
+        }
+
+        public IActionResult DrReport()
         {
             return View();
         }
@@ -61,8 +78,8 @@ namespace HospitalSystem.Controllers
             return View();
         }
 
-
-        // test new interface
+        
+        
 
         public IActionResult ContinueAsDoc()
         {
@@ -73,13 +90,21 @@ namespace HospitalSystem.Controllers
         {
             return View();
         }
-       
 
-        //end test
+        public IActionResult ContinueAsManager()
+        {
+            return View();
+        }
+        public IActionResult Signout()
+        {
+            return View();
+        }
+        
         public IActionResult Privacy()
         {
             return View();
         }
+        
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

@@ -2,14 +2,14 @@
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
-    ViewData["Title"] = "Add New Doctor Page";
-
+   
+    ViewData["Title"] = "Add Patient Report Page";
 }
 <div>
     <section class="newDr_section layout-padding-bottom">
         <div class="container">
             <div class="heading-container">
-                <h2>Add New Doctor</h2>
+                <h2>Patient Report</h2>
             </div>
             <div class="row">
                 <!--<div class="col-md-7">
@@ -23,21 +23,22 @@
                 </div>-->
                 <div class="col-md-7">
                     <div class="form-container">
-                        <form action="doctor.html" method="get">
+                        <form action="" method="get">
                             <div>
-                                <input type="text" id="HospitalID" placeholder="Hospital ID" />
+                                <label for="user">Patient Nam:</label>
+                                <input type="text" id="p-name" placeholder="Patient Name" />
                             </div>
                             <div>
-                                <input type="text" id="username" placeholder="your username" />
+                                <label for="user">Patient ID:</label>
+                                <input type="text" id="id" placeholder="ID" />
+                            </div>
+
+                            <div>
+                                <label for="user">Report:</label>
+                                <input type="file" name="file" accept="file/*" />
                             </div>
                             <div>
-                                <input type="password" id="password" placeholder="your password" />
-                            </div>
-                            <div class="col-md-7">
-                                <input type="file" name="image" accept="image/*">
-                            </div>
-                            <div>
-                                <input type="submit" value="login">
+                                <input type="submit" value="submit">
                             </div>
                         </form>
                     </div>
